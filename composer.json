@@ -1,0 +1,16 @@
+{
+  "name" : "kzorluoglu/polymorphism",
+  "autoload" : {
+    "psr-4" : {
+      "kzorluoglu\\polymorphism\\" : "./src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "kzorluoglu\\polymorphism\\Tests\\" : "./tests"
+    }
+  },
+  "require": {
+    "phpunit/phpunit": "^9.0"
+  }
+}
