@@ -6,7 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Composer
-        run: composer install --prefer-dist
-      - name:  Run PHPUnit
-        run: php7.3 vendor/bin/phpunit
+     - uses: actions/checkout@v1
+     - name: Install Composer
+       run: composer install --prefer-dist
+     - name:  Run PHPUnit
+       run: php7.3 vendor/bin/phpunit
