@@ -4,12 +4,9 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-      - name: PHPUnit (php-actions)
-        uses: php-actions/phpunit@v1
-        with:
-          # Configuration file location
-          config: phpunit.xml
+      - name: Install Composer
+        run: composer install --prefer-dist
+      - name:  Run PHPUnit
+        run: php7.3 vendor/bin/phpunit
