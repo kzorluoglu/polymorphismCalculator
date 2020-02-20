@@ -1,0 +1,15 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: PHPUnit (php-actions)
+        uses: php-actions/phpunit@v1
+        with:
+          # Configuration file location
+          config: phpunit.xml
