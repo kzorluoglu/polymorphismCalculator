@@ -46,7 +46,7 @@ class ValueTest extends TestCase
     /** @test */
     public function setNullAndCheckValue()
     {
-        //$this->expectException(ValueNotExistsException::class);
+        $this->expectException(ValueNotExistsException::class);
         new Value(NULL);
     }
 }
